@@ -43,6 +43,8 @@ Tested on Eclipse Kepler IDE (refer xml-spreadsheet(report) which is generated t
 
 ![Client Screen](Images/Screen%20Shot.jpg)
 
+***Extracted Report*** : [Open Spreadsheet](Report(XML-Spreadsheet).xml)
+
 **Project Setup on Eclilpse**
 
 ![Eclipse](Images/Eclipse%20setup.jpg)
