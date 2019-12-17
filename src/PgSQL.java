@@ -18,7 +18,7 @@ public class PgSQL
 		try 
 		{
             Class.forName("org.postgresql.Driver");
-            conn = DriverManager.getConnection ("jdbc:postgresql://localhost:5432/eAlps", "postgres","123456");
+            conn = DriverManager.getConnection ("jdbc:postgresql://localhost:5432/directory", "_USERNAME_","_PASSWORD_");
             System.out.println("conn built...");
         } 
 		catch (SQLException e) {e.printStackTrace();} 
