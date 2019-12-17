@@ -1,4 +1,4 @@
-SAPCode,PO No,Rejected Qty,Damage Qty,Returned Qty,MRIR Qty,Overage Qty
+SAPCode,PO No,Rejected Qty,Damage Qty,Returned Qty,Inspection Cleared Qty,Overage Qty
 M60HDP10inchX 2.7,7800011572,0,0,0,1888.8,0
 M60HDP10inchX14.2,7800011572,0,0,0,95.76,0
 M60HDP12inchX14.2,7800011572,0,0,0,1353.01,0
