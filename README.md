@@ -12,7 +12,7 @@ Merging fields of multiple Tables in DB to write Spreadsheet report. Spreadsheet
 *	Almost all language supports XML (java, Python, VB, C# any) hence report can be created on any server
 *	XML-Spreadsheet has capability to create Excel in any format (feature list on https://support.office.com/en-us/article/excel-formatting-and-features-that-are-not-transferred-to-other-file-formats-8fdd91a3-792e-4aef-a5bb-46f603d0e585#bm8)
 
-## Example
+## Example : Report for Material Management
 
 Here, example is elobrated on Material management where single report is generated thru stitching 3 different tables based on Primery-key.
 * *Table-1* has information on Material Issuance from store
