@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="utf-8"?><?mso-application progid="Excel.Sheet"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>LTHE-Baroda</Author>
+  <LastAuthor>Amitkumar Panasara</LastAuthor>
+  <Created>2018-12-10T08:38:19Z</Created>
+  <LastSaved>2019-01-08T05:38:35Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10185</WindowHeight>
+  <WindowWidth>20610</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+
+  <Style ss:ID="header">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Color="#000000" ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+    <Border ss:Color="#000000" ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+    <Border ss:Color="#000000" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+   </Borders>
+   <Font ss:Bold="1" ss:Color="#000000" ss:FontName="Arial" ss:Size="11" x:Family="Swiss"/>
+   <Interior ss:Color="#E2EFDA" ss:Pattern="Solid"/>
+  </Style>
+    
+  <Style ss:ID="record">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Color="#000000" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+    <Border ss:Color="#000000" ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+    <Border ss:Color="#000000" ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+    <Border ss:Color="#000000" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+   </Borders>
+   <Font ss:Color="#000000" ss:FontName="Arial" ss:Size="11" x:Family="Swiss"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Report">
+  <Names>
+   <NamedRange ss:Hidden="1" ss:Name="_FilterDatabase" ss:RefersTo="=Report!R1C1:R1C19"/>
+  </Names>
+  <Table>
+   <Column ss:AutoFitWidth="0" ss:Width="87"/>
+   <Column ss:AutoFitWidth="0" ss:Width="135"/>
+   <Column ss:AutoFitWidth="0" ss:Width="249.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Span="1" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Index="8" ss:Width="105.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="90"/>
+   <Column ss:AutoFitWidth="0" ss:Span="9" ss:Width="97.5"/>
+   <Row>
+<Cell ss:Index="1" ss:StyleID="header">
+<Data ss:Type="String">Sr No</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="header">
+<Data ss:Type="String">SAPCode</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="header">
+<Data ss:Type="String">SAPCode LongDescription</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="header">
+<Data ss:Type="String">UOM</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="header">
+<Data ss:Type="String">Item Sub Type</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="header">
+<Data ss:Type="String">Material Specification</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="header">
+<Data ss:Type="String">PO No</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="header">
+<Data ss:Type="String">PO Line Item No</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="header">
+<Data ss:Type="String">PO Qty</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="header">
+<Data ss:Type="String">Dispatched Qty</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="header">
+<Data ss:Type="String">Total MRN Qty</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="header">
+<Data ss:Type="String">Rejected Qty</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="header">
+<Data ss:Type="String">Damage Qty</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="header">
+<Data ss:Type="String">Returned Qty</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="header">
+<Data ss:Type="String">MRIR Qty</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="header">
+<Data ss:Type="String">Overage Qty</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="header">
+<Data ss:Type="String">Total Requested Qty</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="header">
+<Data ss:Type="String">Total Issued Qty</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="header">
+<Data ss:Type="String">Balance for Allocation</Data>
+</Cell>
+</Row>
+  <Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">1</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP10inchX 2.7</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 10inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">4.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">1902.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">1924.81</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">1888.8</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">1888.8</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">1888.8</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">2</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP10inchX14.2</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 10inch X 14.27 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">5.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">96.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">96.26</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">95.76</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">95.76</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">95.76</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">3</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP12inchX14.2</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 12inch X 14.27 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">6.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">1724.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">1400.4</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">1353.01</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">1353.01</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">1353.01</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">4</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP12inchX17.4</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 12inch X 17.48 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">7.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">216.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">212.54</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">212.54</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">212.54</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">212.54</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">5</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP16inchX15.8</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe_ Size : 16inchX15.88 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">1.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">62213.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">62070.07</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">53795.43</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">52425.48</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">52425.48</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">6</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP16inchX16.6</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 16inch X 16.66 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">3.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">2806.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">2791.66</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">2473.48</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">2332.54</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">2332.54</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">7</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP4inchX7.14</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 4inch X 7.14 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">7.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">3230.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">3233.38</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">2142.82</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">2142.82</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">2142.82</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">8</Data>
+</Cell>
+<Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M60HDP4inchX7.92</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">LINE PIPE : 4inch X 7.92 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ WATER INJECTION FLOWLINE_ HOT BENDS</Data>
+</Cell>
+<Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">8.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">372.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">378.58</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">83.62</Data>
+</Cell>
+<Cell ss:Index="12" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">83.62</Data>
+</Cell>
+<Cell ss:Index="16" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">83.62</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">13.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">132.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">143.67</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">9</Data>
+</Cell>
+<Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M60HDP6inchX10.97</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">LINE PIPE : 6inch X 10.97 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ PRODUCTION FLOW LINES_ HOT BENDS</Data>
+</Cell>
+<Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">2.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">540.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">541.44</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">226.83</Data>
+</Cell>
+<Cell ss:Index="16" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">226.83</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">6.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">492.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">503.78</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">226.83</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">10</Data>
+</Cell>
+<Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M60HDP6inchX12.70</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 6inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">3.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">4348.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">4353.06</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">4312.48</Data>
+</Cell>
+<Cell ss:Index="12" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">4312.49</Data>
+</Cell>
+<Cell ss:Index="16" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">4312.49</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">18.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">250.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">11</Data>
+</Cell>
+<Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M60HDP6inchX8.74</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 6inch X 8.74 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">5.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">11120.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">11128.77</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">10626.64</Data>
+</Cell>
+<Cell ss:Index="12" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">10626.64</Data>
+</Cell>
+<Cell ss:Index="16" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">10626.64</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">19.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">2350.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">2350.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">12</Data>
+</Cell>
+<Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M60HDP6inchX9.53</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 6inch X 9.53 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">1.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">36202.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">36208.18</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">34385.39</Data>
+</Cell>
+<Cell ss:Index="12" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">33441.01</Data>
+</Cell>
+<Cell ss:Index="16" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">33441.01</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">17.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">500.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">13</Data>
+</Cell>
+<Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M60HDP8inchX10.31</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 8inch X 10.31 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">9.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">1794.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:MergeDown="1" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">20.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">30.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">14</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP8inchX12.7</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">LINE PIPE : 8inch X 12.7 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ WATER INJECTION FLOWLINE_ HOT BENDS</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">14.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">96.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">15</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP8inchX12.70</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 8inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">10.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">84.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">16</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP8inchX6.35</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 8inch X 6.35 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">11.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">12319.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">33.66</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">17</Data>
+</Cell>
+<Cell ss:Index="2" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDP8inchX8.74</Data>
+</Cell>
+<Cell ss:Index="3" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="String">LINE PIPE : 8inch X 8.74 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ WATER SUPPLY/ DISPOSAL LINE_ HOT BENDS</Data>
+</Cell>
+<Cell ss:Index="4" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">12.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">444.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:MergeDown="2" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">15.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">384.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">21.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">276.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">18</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDPLINE PIP</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 16inch X 16.66 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">2.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">368.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">368.03</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">368.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">19</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDPPIPE1</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 10inch x 14.27 mm thk_ MOC-CS_ as per API 5L Gr. X65 PSL2_ Water Injection Line Hot Induction bend</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">8.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">84.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">92.59</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">20</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDPPIPE2</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 10inch x 15.09 mm thk_ MOC-CS_ as per API 5L Gr. X65 PSL2_ Water Injection Line Hot Induction bend</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">9.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">96.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">104.93</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">21</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDPPIPE3</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 12inch x 17.48 mm thk_ MOC-CS_ as per API 5L Gr. X65 PSL2_ Water Injection Line Hot Induction bend</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011572</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">10.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">120.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">125.7</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">22</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">M60HDPPL2</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 6inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Line Pipe</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">4.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">167.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">177.42</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="1" ss:StyleID="record">
+<Data ss:Type="Number">23</Data>
+</Cell>
+<Cell ss:Index="2" ss:StyleID="record">
+<Data ss:Type="String">MU8HDPBEND01</Data>
+</Cell>
+<Cell ss:Index="3" ss:StyleID="record">
+<Data ss:Type="String">Line Pipe : 8inch x 10.31 MM_ API 5L X65  PSL2</Data>
+</Cell>
+<Cell ss:Index="4" ss:StyleID="record">
+<Data ss:Type="String">M</Data>
+</Cell>
+<Cell ss:Index="5" ss:StyleID="record">
+<Data ss:Type="String">Misc Items Induction Bend</Data>
+</Cell>
+<Cell ss:Index="6" ss:StyleID="record">
+<Data ss:Type="String">CS</Data>
+</Cell>
+<Cell ss:Index="7" ss:StyleID="record">
+<Data ss:Type="Number">7800011555</Data>
+</Cell>
+<Cell ss:Index="8" ss:StyleID="record">
+<Data ss:Type="Number">22.0</Data>
+</Cell>
+<Cell ss:Index="9" ss:StyleID="record">
+<Data ss:Type="Number">220.0</Data>
+</Cell>
+<Cell ss:Index="10" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="11" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="12" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="13" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="14" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="15" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="16" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="17" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="18" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+<Cell ss:Index="19" ss:StyleID="record">
+<Data ss:Type="Number">0.0</Data>
+</Cell>
+</Row>
+</Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <DoNotDisplayGridlines/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>1</SplitHorizontal>
+   <TopRowBottomPane>1</TopRowBottomPane>
+   <SplitVertical>1</SplitVertical>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>0</ActiveCol>
+     <RangeSelection>R2C1:R6C1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <AutoFilter xmlns="urn:schemas-microsoft-com:office:excel" x:Range="R1C1:R1C19">
+  </AutoFilter>
+ </Worksheet>
+</Workbook>
