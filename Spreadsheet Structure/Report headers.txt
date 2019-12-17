@@ -1,0 +1,1 @@
+SAPCode, SAPCode LongDescription, UOM, Item Sub Type, Material Specification, Total Requested Qty, Total Issued Qty, Balance for Allocation, No of PO Line
