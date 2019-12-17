@@ -1,0 +1,44 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="report">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SAPCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="SAPCode_LongDescription"/>
+              <xs:element type="xs:string" name="UOM"/>
+              <xs:element type="xs:string" name="Item_Sub_Type"/>
+              <xs:element type="xs:string" name="Material_Specification"/>
+              <xs:element name="PO">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PO_Line_Item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="PO_Qty"/>
+                          <xs:element type="xs:string" name="Dispatched_Qty"/>
+                          <xs:element type="xs:string" name="Total_MRN_Qty"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="ItemNo"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Rejected_Qty"/>
+                    <xs:element type="xs:string" name="Damage_Qty"/>
+                    <xs:element type="xs:string" name="Returned_Qty"/>
+                    <xs:element type="xs:string" name="MRIR_Qty"/>
+                    <xs:element type="xs:string" name="Overage_Qty"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="POno"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="Total_Requested_Qty"/>
+              <xs:element type="xs:string" name="Total_Issued_Qty"/>
+              <xs:element type="xs:string" name="Balance_for_Allocation"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="code"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

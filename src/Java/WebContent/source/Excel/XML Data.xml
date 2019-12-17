@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report>
+	<SAPCode code="M60HDP10&quot;X 2.7">
+		<SAPCode_LongDescription>Line Pipe : 10" X 12.70 mm thk,MOC-CS, as per API 5L Gr. X65 PSL2</SAPCode_LongDescription>
+		<UOM>M</UOM>
+		<Item_Sub_Type>Misc Items Line Pipe</Item_Sub_Type>
+		<Material_Specification>CS</Material_Specification>
+		<PO POno="7800011572">
+			<PO_Line_Item ItemNo="4">
+				<PO_Qty>1902</PO_Qty>
+				<Dispatched_Qty>1924.81</Dispatched_Qty>
+				<Total_MRN_Qty>1888.8</Total_MRN_Qty>
+			</PO_Line_Item>
+			<Rejected_Qty>0</Rejected_Qty>
+			<Damage_Qty>0</Damage_Qty>
+			<Returned_Qty>0</Returned_Qty>
+			<MRIR_Qty>1888.8</MRIR_Qty>
+			<Overage_Qty>0</Overage_Qty>
+		</PO>
+		<Total_Requested_Qty>0</Total_Requested_Qty>
+		<Total_Issued_Qty>0</Total_Issued_Qty>
+		<Balance_for_Allocation>1888.8</Balance_for_Allocation>
+	</SAPCode>
+</report>

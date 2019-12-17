@@ -1,0 +1,24 @@
+SAPCode,SAPCode LongDescription,UOM,Item Sub Type,Material Specification,Total Requested Qty,Total Issued Qty,Balance for Allocation
+M60HDP10inchX 2.7,Line Pipe : 10inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,1888.8
+M60HDP10inchX14.2,Line Pipe : 10inch X 14.27 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,95.76
+M60HDP12inchX14.2,Line Pipe : 12inch X 14.27 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,1353.01
+M60HDP12inchX17.4,Line Pipe : 12inch X 17.48 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,212.54
+M60HDP16inchX15.8,Line Pipe_ Size : 16inchX15.88 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,52425.48
+M60HDP16inchX16.6,Line Pipe : 16inch X 16.66 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,2332.54
+M60HDPLINE PIP,Line Pipe : 16inch X 16.66 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,0
+M60HDPPIPE1,Line Pipe : 10inch x 14.27 mm thk_ MOC-CS_ as per API 5L Gr. X65 PSL2_ Water Injection Line Hot Induction bend,M,Misc Items Line Pipe,CS,0,0,0
+M60HDPPIPE2,Line Pipe : 10inch x 15.09 mm thk_ MOC-CS_ as per API 5L Gr. X65 PSL2_ Water Injection Line Hot Induction bend,M,Misc Items Line Pipe,CS,0,0,0
+M60HDPPIPE3,Line Pipe : 12inch x 17.48 mm thk_ MOC-CS_ as per API 5L Gr. X65 PSL2_ Water Injection Line Hot Induction bend,M,Misc Items Line Pipe,CS,0,0,0
+M60HDP4inchX7.14,Line Pipe : 4inch X 7.14 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,2142.82
+M60HDP4inchX7.92,LINE PIPE : 4inch X 7.92 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ WATER INJECTION FLOWLINE_ HOT BENDS,M,Misc Items Line Pipe,CS,0,0,83.62
+M60HDP6inchX10.97,LINE PIPE : 6inch X 10.97 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ PRODUCTION FLOW LINES_ HOT BENDS,M,Misc Items Line Pipe,CS,0,0,226.83
+M60HDP6inchX12.70,Line Pipe : 6inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,4312.49
+M60HDP6inchX8.74,Line Pipe : 6inch X 8.74 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,10626.64
+M60HDP6inchX9.53,Line Pipe : 6inch X 9.53 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,33441.01
+M60HDP8inchX10.31,Line Pipe : 8inch X 10.31 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,0
+M60HDP8inchX12.7,LINE PIPE : 8inch X 12.7 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ WATER INJECTION FLOWLINE_ HOT BENDS,M,Misc Items Line Pipe,CS,0,0,0
+M60HDP8inchX12.70,Line Pipe : 8inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,0
+M60HDP8inchX6.35,Line Pipe : 8inch X 6.35 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,0
+M60HDP8inchX8.74,LINE PIPE : 8inch X 8.74 MM THK_ _MOC-CS_ AS PER API 5L GR. X65 PSL2_ WATER SUPPLY/ DISPOSAL LINE_ HOT BENDS,M,Misc Items Line Pipe,CS,0,0,0
+M60HDPPL2,Line Pipe : 6inch X 12.70 mm thk_MOC-CS_ as per API 5L Gr. X65 PSL2,M,Misc Items Line Pipe,CS,0,0,0
+MU8HDPBEND01,Line Pipe : 8inch x 10.31 MM_ API 5L X65  PSL2,M,Misc Items Induction Bend,CS,0,0,0

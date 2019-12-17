@@ -1,0 +1,23 @@
+<report>
+	<SAPCode code="SAPCODE gose here">
+		<SAPCode_LongDescription></SAPCode_LongDescription>
+		<UOM></UOM>
+		<Item_Sub_Type></Item_Sub_Type>
+		<Material_Specification></Material_Specification>
+		<PO POno="PO NO gose here">
+			<PO_Line_Item ItemNo ="line item gose here">
+				<PO_Qty></PO_Qty>
+				<Dispatched_Qty></Dispatched_Qty>
+				<Total_MRN_Qty></Total_MRN_Qty>
+			</PO_Line_Item>
+			<Rejected_Qty></Rejected_Qty>
+			<Damage_Qty></Damage_Qty>
+			<Returned_Qty></Returned_Qty>
+			<MRIR_Qty></MRIR_Qty>
+			<Overage_Qty></Overage_Qty>
+		</PO>
+		<Total_Requested_Qty></Total_Requested_Qty>
+		<Total_Issued_Qty></Total_Issued_Qty>
+		<Balance_for_Allocation></Balance_for_Allocation>
+	</SAPCode>
+</report>
